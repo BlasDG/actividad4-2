@@ -15,9 +15,9 @@ import java.io.IOException;
  * Encontrá más código en mi repo de GitHub: https://github.com/CharlyCimino
  */
 public class VisorDeTXTs {
-    public void mostrarTxt(String ruta) throws FileNotFoundException, IOException {
-        File elArchivo = new File(ruta);        
+    public void mostrarTxt(String ruta) throws IOException {
+        File elArchivo = new File(ruta);
         BufferedReader br = new BufferedReader(new FileReader(elArchivo));
-        System.out.println( br.readLine());
+        System.out.println(br.readLine());
     }
 }
